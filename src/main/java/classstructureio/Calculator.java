@@ -1,5 +1,6 @@
 package classstructureio;
 
+
 import java.util.Scanner;
 
 public class Calculator {
