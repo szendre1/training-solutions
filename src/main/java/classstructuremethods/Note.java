@@ -34,8 +34,4 @@ public class Note {
         return (this.name+": ("+this.topic+") "+this.text);
     }
 
-
-
-
-
 }
