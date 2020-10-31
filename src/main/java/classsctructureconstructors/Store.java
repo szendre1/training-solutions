@@ -6,7 +6,7 @@ public class Store {
 
     public Store(String product) {
         this.product = product;
-        this.stock = 0;
+        this.stock = 0; //
     }
 
     public void store(int stock){
