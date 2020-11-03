@@ -6,5 +6,6 @@ public class DistanceMain {
         int km = (int) distance.getDistancelnKm();
         System.out.println("A távolság: "+distance.getDistancelnKm()+"Km Pontos:"+distance.isExact());
         System.out.println("A távolság: "+km+"Km");
+
     }
 }
