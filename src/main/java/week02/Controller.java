@@ -13,6 +13,7 @@ public class Controller {
         office.addMeetingRoom(meetingRoom3);
 
         office.printNames();
+        office.printNamesReverse();
 
 
 

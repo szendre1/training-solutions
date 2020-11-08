@@ -14,7 +14,26 @@ public class Office {
         meetingRomsList.add(meetingRoom);
     }
 
-    public void printNames(){
+    public void printNames() {
+        //Collections.sort(meetingRomsList);
+        List<String> nevek = new ArrayList<>();
+        for (MeetingRoom mr : meetingRomsList) {
+            System.out.println(mr.getName());
+        }
+        System.out.println();
+    }
+
+    public void printNamesReverse() {
+        for (int i = meetingRomsList.size() - 1; i > -1; i--) {
+            System.out.println(meetingRomsList.get(i).getName());
+            //System.out.println(i);
+
+        }
+    }
+
+
+/*
+    public void printNamesold(){
 //        meetingRomsList.sort(MeetingRoom);
         List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr:meetingRomsList){
@@ -22,10 +41,9 @@ public class Office {
             nevek.add(mr.getName());
 
         }
-        nevek.sort();
+        // nevek.sort();
         System.out.println(nevek);
     }
 
-
-
+*/
 }
