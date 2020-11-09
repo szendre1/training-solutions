@@ -28,37 +28,60 @@ public class Controller {
             office.addMeetingRoom(meetingRoomNew);
         }
 
-        /*
-        MeetingRoom meetingRoom1 = new MeetingRoom("Elso",2,3);
-        MeetingRoom meetingRoom2 = new MeetingRoom("Masodik",4,5);
-        MeetingRoom meetingRoom3 = new MeetingRoom("Harmadik",6,7);
-        MeetingRoom meetingRoom4 = new MeetingRoom("Negyedik",1,2);
+        for (int i=1; i==1; i=i){
+            System.out.println();
+            System.out.println("1. Tárgyalók sorrendben");
+            System.out.println("2. Tárgyalók visszafele sorrendben");
+            System.out.println("3. Minden második tárgyaló");
+            System.out.println("4. Területek");
+            System.out.println("5. Keresés pontos név alapján");
+            System.out.println("6. Keresés névtöredék alapján");
+            System.out.println("7. Keresés terület alapján");
+            System.out.println("8. Munka befejezése");
 
-        office.addMeetingRoom(meetingRoom1);
-        office.addMeetingRoom(meetingRoom2);
-        office.addMeetingRoom(meetingRoom3);
-        office.addMeetingRoom(meetingRoom4);
+            System.out.print("Melyik feladattal foglalkozzunk?");
+            int seletctJob = scanner.nextInt();
+            scanner.nextLine();
+            if (seletctJob==1) {
+                System.out.println();
+                office.printNames();
+            }
+            if (seletctJob==2) {
+                System.out.println();
+                office.printNamesReverse();
+            }
+            if (seletctJob==3) {
+                System.out.println();
+                office.printEvenNames();
+            }
+            if (seletctJob==4) {
+                System.out.println();
+                office.printAreas();
+            }
+            if (seletctJob==5) {
+                System.out.print("Kérem a pontos nevet! ");
+                String name = scanner.nextLine();
+                System.out.println();
+                office.printMeetingRomsWithName(name);
+            }
+            if (seletctJob==6) {
+                System.out.print("Kérem a név töredéket! ");
+                String name = scanner.nextLine();
+                System.out.println();
+                office.printMeetingRomsContains(name);
+            }
+            if (seletctJob==7) {
+                System.out.print("Mekkoránál nagyobb területek kellenek? ");
+                int area = scanner.nextInt();
+                System.out.println();
+                office.printAreasLargerThan(area);
+            }
 
 
+            if (seletctJob==8) {
+                return;
+            }
 
-         */
-
-        office.printNames();
-        System.out.println();
-        office.printNamesReverse();
-        System.out.println();
-        office.printEvenNames();
-        System.out.println();
-        office.printAreas();
-        System.out.println();
-        office.printMeetingRomsWithName("Harmadik");
-        System.out.println();
-        office.printMeetingRomsContains("DIK");
-        System.out.println();
-        office.printAreasLargerThan(19);
-
-
-
-
+        }
     }
 }

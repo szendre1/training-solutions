@@ -19,7 +19,6 @@ public class Office {
         for (MeetingRoom mr : meetingRomsList) {
             System.out.println(mr.getName());
         }
-        System.out.println();
     }
 
     public void printNamesReverse() {
