@@ -47,11 +47,34 @@ public class Office {
     public void printMeetingRomsWithName(String name) {
         //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
-            System.out.println(mr.getName().equals(name) ?
-                    (mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) )
-                    : "");
+            if (mr.getName().equals(name)){
+                System.out.println(mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()));
+            }
         }
     }
+
+    public void printMeetingRomsContains(String name) {
+        //List<String> nevek = new ArrayList<>();
+        for (MeetingRoom mr : meetingRomsList) {
+            if (mr.getName().toLowerCase().contains(name.toLowerCase())) {
+                System.out.println((mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) ));
+            }
+        }
+    }
+
+    public void printAreasLargerThan(int area) {
+        //List<String> nevek = new ArrayList<>();
+        for (MeetingRoom mr : meetingRomsList) {
+            if ((mr.getLength()*mr.getWidth())>area) {
+                System.out.println((mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) ));
+            }
+        }
+    }
+
+
+
+
+
 
 
 /*

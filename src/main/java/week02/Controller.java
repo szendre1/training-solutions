@@ -23,6 +23,10 @@ public class Controller {
         office.printAreas();
         System.out.println();
         office.printMeetingRomsWithName("Harmadik");
+        System.out.println();
+        office.printMeetingRomsContains("DIK");
+        System.out.println();
+        office.printAreasLargerThan(19);
 
 
 
