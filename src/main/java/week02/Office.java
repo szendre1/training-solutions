@@ -15,8 +15,7 @@ public class Office {
     }
 
     public void printNames() {
-        //Collections.sort(meetingRomsList);
-        List<String> nevek = new ArrayList<>();
+        //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
             System.out.println(mr.getName());
         }
@@ -26,8 +25,31 @@ public class Office {
     public void printNamesReverse() {
         for (int i = meetingRomsList.size() - 1; i > -1; i--) {
             System.out.println(meetingRomsList.get(i).getName());
-            //System.out.println(i);
 
+        }
+    }
+
+
+    public void printEvenNames() {
+        for (int i =1; i<=meetingRomsList.size() - 1; i=i+2) {
+            System.out.println(meetingRomsList.get(i).getName());
+
+        }
+    }
+
+    public void printAreas() {
+        //List<String> nevek = new ArrayList<>();
+        for (MeetingRoom mr : meetingRomsList) {
+            System.out.println(mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) );
+        }
+    }
+
+    public void printMeetingRomsWithName(String name) {
+        //List<String> nevek = new ArrayList<>();
+        for (MeetingRoom mr : meetingRomsList) {
+            System.out.println(mr.getName().equals(name) ?
+                    (mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) )
+                    : "");
         }
     }
 
