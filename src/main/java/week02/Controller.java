@@ -45,40 +45,31 @@ public class Controller {
             if (seletctJob==1) {
                 System.out.println();
                 office.printNames();
-            }
-            if (seletctJob==2) {
+            } else if (seletctJob==2) {
                 System.out.println();
                 office.printNamesReverse();
-            }
-            if (seletctJob==3) {
+            } else if (seletctJob==3) {
                 System.out.println();
                 office.printEvenNames();
-            }
-            if (seletctJob==4) {
+            } else if (seletctJob==4) {
                 System.out.println();
                 office.printAreas();
-            }
-            if (seletctJob==5) {
+            } else if (seletctJob==5) {
                 System.out.print("Kérem a pontos nevet! ");
                 String name = scanner.nextLine();
                 System.out.println();
                 office.printMeetingRomsWithName(name);
-            }
-            if (seletctJob==6) {
+            } else if (seletctJob==6) {
                 System.out.print("Kérem a név töredéket! ");
                 String name = scanner.nextLine();
                 System.out.println();
                 office.printMeetingRomsContains(name);
-            }
-            if (seletctJob==7) {
+            } else if (seletctJob==7) {
                 System.out.print("Mekkoránál nagyobb területek kellenek? ");
                 int area = scanner.nextInt();
                 System.out.println();
                 office.printAreasLargerThan(area);
-            }
-
-
-            if (seletctJob==8) {
+            } else if (seletctJob==8) {
                 return;
             }
 
