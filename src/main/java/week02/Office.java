@@ -39,7 +39,7 @@ public class Office {
     public void printAreas() {
         //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
-            System.out.println(mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) );
+            System.out.println("Tárgyaló: "+mr.getName()+" Szélesség: "+mr.getWidth()+" Hosszúság: "+mr.getLength()+" Terület: "+(mr.getWidth()*mr.getLength()) );
         }
     }
 
@@ -47,7 +47,7 @@ public class Office {
         //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
             if (mr.getName().equals(name)){
-                System.out.println(mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()));
+                System.out.println("Tárgyaló: "+mr.getName()+" Szélesség: "+mr.getWidth()+" Hosszúság: "+mr.getLength()+" Terület: "+(mr.getWidth()*mr.getLength()) );
             }
         }
     }
@@ -56,7 +56,7 @@ public class Office {
         //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
             if (mr.getName().toLowerCase().contains(name.toLowerCase())) {
-                System.out.println((mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) ));
+                System.out.println("Tárgyaló: "+mr.getName()+" Szélesség: "+mr.getWidth()+" Hosszúság: "+mr.getLength()+" Terület: "+(mr.getWidth()*mr.getLength()) );
             }
         }
     }
@@ -65,7 +65,7 @@ public class Office {
         //List<String> nevek = new ArrayList<>();
         for (MeetingRoom mr : meetingRomsList) {
             if ((mr.getLength()*mr.getWidth())>area) {
-                System.out.println((mr.getName()+" "+mr.getWidth()+" "+mr.getLength()+" "+(mr.getWidth()*mr.getLength()) ));
+                System.out.println("Tárgyaló: "+mr.getName()+" Szélesség: "+mr.getWidth()+" Hosszúság: "+mr.getLength()+" Terület: "+(mr.getWidth()*mr.getLength()) );
             }
         }
     }

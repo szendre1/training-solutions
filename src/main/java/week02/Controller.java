@@ -16,12 +16,12 @@ public class Controller {
         int tWidth;
         for (int i=1;i<=targyaloDb;i++){
             MeetingRoom meetingRoomNew = new MeetingRoom("Elso",2,3);
-            System.out.print("Tárgyaló neve: ");
+            System.out.print(i+". Tárgyaló neve: ");
             meetingRoomNew.setName(scanner.nextLine());
-            System.out.print("Tárgyaló hossza: ");
+            System.out.print(i+". Tárgyaló hossza: ");
             meetingRoomNew.setLength(scanner.nextInt());
             scanner.nextLine();
-            System.out.print("Tárgyaló szélessége: ");
+            System.out.print(i+". Tárgyaló szélessége: ");
             meetingRoomNew.setWidth(scanner.nextInt());
             scanner.nextLine();
             System.out.println();
