@@ -9,7 +9,7 @@ public class Phone {
     public Phone(String phone) {
 
         this.prefix = phone.substring(0,2);
-        this.number = phone.substring(3);
+        this.number = phone.substring(3) ;
     }
 
     public String getPrefix() {
