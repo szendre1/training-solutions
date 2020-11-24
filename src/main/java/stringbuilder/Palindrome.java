@@ -7,14 +7,14 @@ public class Palindrome {
             throw new NullPointerException("Mark must not be null!");
         }
         StringBuilder pali = new StringBuilder();
-        pali.append(word);
+        pali.append(word.toUpperCase());
         pali.reverse();
-        return word.equals(pali.toString());
+        return word.toUpperCase().equals(pali.toString());
     }
 
 
     public static void main(String[] args) {
-        String s="level";
+        String s="Level";
         Palindrome palindrome = new Palindrome();
         System.out.println(s+" is "+ (palindrome.isPalindrome(s)? "palindrome.":"not palindrome."));
     }
