@@ -10,6 +10,8 @@ public class ProductStoreTest {
     @Test
     public void ProductTest() {
         Product product = new Product("Butter",2020,11,15);
+        assertEquals("Butter", product.getName());
+        assertEquals("2020-11-15", product.getEndDate().toString());
         Store store = new Store();
         store.addProduct(product);
         store.addProduct(new Product("Bred",2020,11,28));
