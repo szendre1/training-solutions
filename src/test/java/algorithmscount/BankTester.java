@@ -1,5 +1,6 @@
 package algorithmscount;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class BankTester {
 private List<BankAccount> accounts;
 private BankAccountCounter bac;
 
-@BeforeEach
+    @BeforeEach
     public void setUp() {
     accounts = new ArrayList<>();
     bac = new BankAccountCounter();
