@@ -6,7 +6,7 @@ import java.util.List;
 public class ListSelector {
 
 
-    public String ListSelector(List<String> lista) {
+    public String ListS(List<String> lista) {
         if (lista == null) {
             throw new IllegalArgumentException("Nem adtál meg listát!!!");
         }
@@ -38,7 +38,7 @@ public class ListSelector {
 
     public static void main(String[] args) {
         ListSelector ls = new ListSelector();
-        String stringToList = ls.ListSelector(Arrays.asList("Egy", "Kettő", "Három", "Négy", "Öt", "Hat", "Hét"));
+        String stringToList = ls.ListS(Arrays.asList("Egy", "Kettő", "Három", "Négy", "Öt", "Hat", "Hét"));
         System.out.println(stringToList);
     }
 }
