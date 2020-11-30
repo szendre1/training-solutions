@@ -25,7 +25,7 @@ public class ListSelector {
 
         s.append("[");
         for (int x = 0; lista.size() > x; x++) {
-            if (x % 2 == 1) {
+            if (x % 2 == 0) {
                 s.append(lista.get((int) x) + ",");
             }
         }
