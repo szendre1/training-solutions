@@ -30,6 +30,7 @@ public class ListSelector {
             }
         }
         StringBuilder s1 = new StringBuilder();
+        //s1.append()
         s1.append(s.substring(0, s.length() - 1));
         s1.append("]");
         return (s1.toString());
@@ -40,5 +41,6 @@ public class ListSelector {
         ListSelector ls = new ListSelector();
         String stringToList = ls.ListS(Arrays.asList("Egy", "Kettő", "Három", "Négy", "Öt", "Hat", "Hét"));
         System.out.println(stringToList);
+
     }
 }
