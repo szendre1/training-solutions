@@ -6,7 +6,7 @@ import java.util.List;
 
 public class WordEraserSplit {
 
-    public String eraseWord(String words, String word) {
+    public String eraserWord(String words, String word) {
         if (words == null) {
             throw new IllegalArgumentException("Hibás az első kifejezés!");
         }
