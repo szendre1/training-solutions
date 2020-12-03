@@ -29,9 +29,7 @@ public class SpaceAgency {
         for (Satellite x:satellites) {
             sb.append(x.toString()+", ");
         }
-        sb.replace(sb.length()-2,sb.length()-2,"]");
-        sb.deleteCharAt(sb.length()-1);
-        sb.deleteCharAt(sb.length()-1);
+        sb.replace(sb.length()-2,sb.length()-0,"]");
         return sb.toString();
     }
 
