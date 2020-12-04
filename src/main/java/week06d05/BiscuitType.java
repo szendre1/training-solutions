@@ -1,4 +1,5 @@
 package week06d05;
 
-public enum BiscuitType {ALBERT, PILÓTA,OREO
+public enum BiscuitType {
+    ALBERT, PILÓTA, OREO
 }
