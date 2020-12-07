@@ -18,7 +18,7 @@ public class MathAlgorithmsTest {
         assertEquals(true,MathAlgorithms.isPrime(11));
         assertEquals(true,MathAlgorithms.isPrime(13));
         assertEquals(false,MathAlgorithms.isPrime(10));
-        Exception ex = assertThrows(IllegalArgumentException.class, () -> MathAlgorithms.isPrime(1));
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> MathAlgorithms.isPrime(0));
         assertEquals("2 és 2147483647 közötti érték adható meg.", ex.getMessage());
 
 
