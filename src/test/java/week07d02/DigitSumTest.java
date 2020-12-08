@@ -8,9 +8,9 @@ class DigitSumTest {
 
     @Test
     void sumOfDigits() {
-        assertEquals(6,DigitSum.sumOfDigits(1,1,1,1,1,1));
-        assertEquals(6,DigitSum.sumOfDigits(0,6));
-        assertEquals(6,DigitSum.sumOfDigits(-6,12));
-        assertEquals(6,DigitSum.sumOfDigits(20,-14));
+        assertEquals(6,DigitSum.sumOfDigits(123));
+        assertEquals(10,DigitSum.sumOfDigits(1234));
+        assertEquals(6,DigitSum.sumOfDigits(123000));
+        assertEquals(6,DigitSum.sumOfDigits(12300000));
     }
 }
