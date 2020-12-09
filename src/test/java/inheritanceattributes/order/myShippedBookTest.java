@@ -1,10 +1,6 @@
 package inheritanceattributes.order;
 
-import inheritanceattributes.Book;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+/*
 public class myShippedBookTest {
     @Test
     public void purchaseTest() {
@@ -14,4 +10,6 @@ public class myShippedBookTest {
         assertEquals(6000, book.purchase(2));
         assertEquals(7200, book.order(2));
     }
-}
+
+ */
+
