@@ -41,9 +41,12 @@ public class Robot {
         return coordY;
     }
 
+    /*
     public static void main(String[] args) {
         Robot robot = new Robot(0, 0);
         Robot newCord = robot.Move("FFLLLLLBBBBJJJJJJJ");
         System.out.println("X: "+newCord.getCoordX()+" Y:"+ newCord.getCoordY());
     }
+
+     */
 }
