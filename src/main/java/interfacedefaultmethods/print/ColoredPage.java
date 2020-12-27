@@ -16,4 +16,5 @@ public class ColoredPage {
     public String getPageColor() {
         return pageColor;
     }
+    //
 }
