@@ -11,6 +11,4 @@ public interface Printable {
     default String getColor(int pageNr) {
         return BLACK;
     }
-//
-
 }

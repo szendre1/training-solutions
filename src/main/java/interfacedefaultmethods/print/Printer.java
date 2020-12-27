@@ -12,6 +12,4 @@ public class Printer {
         }
         return edited.toString();
     }
-//
-
 }

@@ -11,6 +11,4 @@ public class TestPrintable implements Printable {
     public String getPage(int pageNumber) {
         return null;
     }
-    //
-    //
 }

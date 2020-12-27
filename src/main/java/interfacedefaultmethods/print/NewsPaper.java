@@ -19,5 +19,4 @@ public class NewsPaper implements Printable {
     public String getPage(int pageNr) {
         return pageTitles.get(pageNr);
     }
-//
 }
