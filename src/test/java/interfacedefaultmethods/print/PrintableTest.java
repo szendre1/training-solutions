@@ -12,5 +12,5 @@ public class PrintableTest {
         Printable printable = new TestPrintable();
         assertEquals(Printable.BLACK, printable.getColor(0));
     }
-
+//
 }

@@ -21,4 +21,5 @@ public class PrinterTest {
 
         assertEquals("Page1\n[#ff0000]Page2\n", new Printer().print(storyBook));
     }
+    //
 }

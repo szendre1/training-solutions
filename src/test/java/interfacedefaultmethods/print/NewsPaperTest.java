@@ -17,4 +17,5 @@ public class NewsPaperTest {
         assertEquals("Page1", newspaper.getPage(0));
         assertEquals(Printable.BLACK, newspaper.getColor(0));
     }
+    //
 }

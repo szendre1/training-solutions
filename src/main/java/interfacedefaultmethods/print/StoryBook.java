@@ -26,4 +26,5 @@ public class StoryBook implements Printable {
     public String getColor(int pageNr) {
         return pages.get(pageNr).getPageColor();
     }
+    //
 }

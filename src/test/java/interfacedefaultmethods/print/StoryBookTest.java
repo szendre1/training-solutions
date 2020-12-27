@@ -20,4 +20,5 @@ public class StoryBookTest {
         assertEquals("Page2", storyBook.getPage(1));
         assertEquals("#FF0000", storyBook.getColor(1));
     }
+    //
 }
