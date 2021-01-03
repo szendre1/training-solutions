@@ -15,5 +15,5 @@ public class SeatHeaterStateTest {
         assertEquals(SeatHeaterState.ONE, SeatHeaterState.TWO.next());
         assertEquals(SeatHeaterState.OFF, SeatHeaterState.ONE.next());
     }
-
+//
 }
