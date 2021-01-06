@@ -39,7 +39,7 @@ public class Cv {
                 return x.getLevel();
             }
         }
-        return 0;
+        throw new IllegalArgumentException("Unknown subject"+sName);
     }
 
 
