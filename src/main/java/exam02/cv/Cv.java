@@ -25,9 +25,22 @@ public class Cv {
         String skillName;
         for(String newSkill:newSkills){
             skillName=newSkill.substring(0,newSkill.length() - 4);
-            level=Integer.parseInt(newSkill.substring(newSkill.length() - 2,0));
-            skills.add(new Skill("",1));
+            //String level1=newSkill.substring(newSkill.length() - 2,1);
+            level=Integer.parseInt(newSkill.substring(newSkill.length() - 2,newSkill.length() - 1));
+
+            skills.add(new Skill(skillName,level));
         }
 
     }
+
+    public int findSkillLevelByName(String sName){
+        for(Skill x:skills){
+            if (x.getName().equals(sName)){
+                return x.getLevel();
+            }
+        }
+        return 0;
+    }
+
+
 }
