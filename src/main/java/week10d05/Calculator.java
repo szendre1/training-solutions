@@ -11,6 +11,7 @@ public class Calculator {
             MinSum +=arr[i];
         }
         System.out.println(MinSum);
+       
     return MinSum;
     }
 }
