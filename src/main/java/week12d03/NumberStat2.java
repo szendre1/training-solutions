@@ -32,7 +32,7 @@ public class NumberStat2 {
         public Integer smallestUnique () {
             if (integerList.size() < 1) {
                 throw new IllegalArgumentException("Not enough elements");
-            }
+            } //
             List<Integer> myList = new ArrayList<>(integerList);
             Collections.sort(myList);
             Integer winner = null;
