@@ -8,6 +8,22 @@ public class Street {
 
     public void sellSite(Site site) {
         sites.add(site);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     public int lastSell() {
@@ -44,3 +60,8 @@ public class Street {
         return fencesStats;
     }
 }
+
+
+
+
+
