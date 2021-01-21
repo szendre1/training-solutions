@@ -19,8 +19,8 @@ public class SecretCode {
             byte[] bytes = new byte[1000];
             int size;
             while ((size = inputStream.read(bytes)) > 0) {
-                for (byte b : bytes) {
-                    System.out.print((char) (b + 10));
+                for (int i = 0; i < size; i++) {
+                    System.out.print((char) (bytes[i] + 10));
                 }
             }
         } catch (IOException ioe) {
