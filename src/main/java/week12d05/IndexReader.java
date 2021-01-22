@@ -44,7 +44,5 @@ public class IndexReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
