@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TemplateMerger {
+public class TemplatesMerger2 {
 
     public void merge(Path file, List<Employee> employees2) {
         try {
@@ -29,7 +29,7 @@ public class TemplateMerger {
 
             String name = line.substring(line.indexOf("{") + 1, line.indexOf("}"));
             //System.out.println(name);
-            int start = line.indexOf("}") + 1;
+            int start = line.indexOf("}") + 2;
             String yearStr = line.substring(line.indexOf("{", start) + 1, line.indexOf("}", start));
             int year = Integer.parseInt(yearStr);
             //System.out.println(year);
