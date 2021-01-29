@@ -10,12 +10,18 @@ public class WordManipulator {
         if (mainString==null) {
             throw new IllegalArgumentException("Null parameter error!!!!!!!!!!!!!!!!!!!!!!!");
         }
-        Map<Character, Integer> counter = new HashMap();
+        Map<Character, Integer> counter = new HashMap<>();
         mainString = mainString.toUpperCase().replaceAll("[\\W\\d\\s]","");
         char[] stringArray = mainString.toCharArray();  // W=nonWord d=digit  s=whitespace
         for (char c:stringArray){
                 counter.put(c, 1);
         }
         return counter.size();
+    }
+
+    public static void main(String[] args) {
+        String teszt="AAaaaaÁÁáá1    23BBbbbBb...????";
+        WordManipulator wmp = new WordManipulator();
+        System.out.println(wmp.letterCounter(teszt));
     }
 }
