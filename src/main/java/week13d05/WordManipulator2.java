@@ -1,7 +1,7 @@
 package week13d05;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class WordManipulator2 {
 
@@ -12,10 +12,11 @@ public class WordManipulator2 {
         }
         String tempString = mainString.toUpperCase().replaceAll("[\\W\\d\\s]","");
         char[] stringArray = tempString.toCharArray();  // W=nonWord d=digit  s=whitespace
-        Set<Character> counter = new HashSet<>();
+        Set<Character> counter = new TreeSet<>();
         for(char c: stringArray){
             counter.add(c);
         }
+        System.out.println(counter);
         return counter.size();
     }
 

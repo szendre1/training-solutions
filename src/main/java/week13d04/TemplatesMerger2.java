@@ -33,7 +33,7 @@ public class TemplatesMerger2 {
             String yearStr = line.substring(line.indexOf("{", start) + 1, line.indexOf("}", start));
             int year = Integer.parseInt(yearStr);
             //System.out.println(year);
-            employees1.add(new Employee(name, year));
+           // employees1.add(new Employee(name, year));
         }
         //return employees;
     }
