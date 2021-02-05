@@ -1,9 +1,10 @@
 package week14d05;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,16 +14,10 @@ public class Statistics {
         Map<String, Integer> results = new HashMap<>();
         String line = null;
         while ((line = film.readLine()) != null) {
-            line = line.replaceAll("[.,1234567890?!:]", "");
-            line = line.replaceAll("<i>", "");
-            line = line.replaceAll("</i>", "");
-            line = line.replaceAll("-", " ");
-            line = line.toLowerCase();
-            //System.out.println(line);
-            String[] splitedWords = line.split(" ");
-            for (String sw : splitedWords) {
+            String[] splitedLine = line.split(" ");
+            for (String sl : splitedLine) {
                 for (String fw : findWords) {
-                    if (fw.toLowerCase().equals(sw)) {
+                    if (sl.toLowerCase().contains(fw.toLowerCase())) {
                         Integer mapValue = results.containsKey(fw) ? results.get(fw) + 1 : 1;
                         results.put(fw,mapValue);
                     }
@@ -34,9 +29,10 @@ public class Statistics {
 
 
     public static void main(String[] args) {
-        //Path filmPath = Path.of("hachiko.srt");
-        //try (BufferedReader film = Files.newBufferedReader(filmPath)){
-        try (BufferedReader film = new BufferedReader(new InputStreamReader(new FileInputStream("hachiko.srt"), "windows-1250"))){
+        try (BufferedReader film = Files.newBufferedReader(Path.of("hachiko.srt"), Charset.forName("windows-1250"))){
+       // try (BufferedReader film = new BufferedReader(new InputStreamReader(new FileInputStream("hachiko.srt"), Charset.forName("windows-1250")))){
+
+
              Statistics statistics = new Statistics();
              String[] words={ "Hachiko", "haza","pályaudvar", "jó"};
             Map<String, Integer> result =  statistics.countWords(film,words);
