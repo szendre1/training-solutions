@@ -13,9 +13,10 @@ public class Statistics {
         Map<String, Integer> results = new HashMap<>();
         String line = null;
         while ((line = film.readLine()) != null) {
-            line = line.replaceAll("[.,1234567890?!:-]", "");
+            line = line.replaceAll("[.,1234567890?!:]", "");
             line = line.replaceAll("<i>", "");
             line = line.replaceAll("</i>", "");
+            line = line.replaceAll("-", " ");
             line = line.toLowerCase();
             //System.out.println(line);
             String[] splitedWords = line.split(" ");
