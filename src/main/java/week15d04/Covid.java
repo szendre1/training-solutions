@@ -16,7 +16,7 @@ public class Covid {
     }
 
     public int getCases_weekly() {
-        return cases_weekly;
+        return cases_weekly ;
     }
 
     @Override

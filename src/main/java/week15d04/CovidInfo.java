@@ -35,7 +35,7 @@ public class CovidInfo {
 
     private List<Covid> topThree() {
         List<Covid> result = covidList.stream().sorted(Comparator.comparing(Covid::getCases_weekly).reversed()).collect(Collectors.toList());
-        result = result.subList(0, 3);
+        result = result.subList(0, 3) ;
 
 
         return result;
