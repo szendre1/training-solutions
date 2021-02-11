@@ -22,9 +22,9 @@ public class CovidInfo {
         String line = null;
         while ((line = covidBuffer.readLine()) != null) {
             String question = line;
-            line = covidBuffer.readLine();
             String lineArr[] = line.split(",");
             if (lineArr[4].equals("Hungary")) {
+                System.out.println(line);
                 String year_week = lineArr[1];
                 int cases_weekly = Integer.parseInt(lineArr[2]);
                 covidList.add(new Covid(year_week, cases_weekly));
@@ -34,7 +34,11 @@ public class CovidInfo {
 
 
     private List<Covid> topThree() {
+
         List<Covid> result = covidList.stream().sorted(Comparator.comparing(Covid::getCases_weekly).reversed()).collect(Collectors.toList());
+        System.out.println(result);
+        System.out.println();
+
         result = result.subList(0, 3) ;
 
 
