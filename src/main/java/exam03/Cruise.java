@@ -9,7 +9,7 @@ public class Cruise {
     private Boat boat;
     private LocalDate sailing;
     private double basicPrice;
-    private List<Passenger> passengers= new ArrayList<>();
+    private List<Passenger> passengers = new ArrayList<>();
 
     public Boat getBoat() {
         return boat;
@@ -33,14 +33,32 @@ public class Cruise {
         this.basicPrice = basicPrice;
     }
 
-    public void bookPassenger(Passenger passenger){
-        if(passengers.size()<boat.getMaxPassengers()){
+    public void bookPassenger(Passenger passenger) {
+        if (passengers.size() < boat.getMaxPassengers()) {
             passengers.add(passenger);
         } else {
             throw new IllegalArgumentException("Nincs elég hely!");
         }
     }
 
+    public double getPriceForPassenger(Passenger passenger) {
+        return basicPrice * passenger.getCruiseClass().getValue();
+    }
 
+    public Passenger findPassengerByName(String name) {
+        for (Passenger p : passengers) {
+            if (p.getName().equals(name)) {
+                return p;
+            }
+        }
+        throw new IllegalArgumentException("Nincs ilyen");
+    }
 
+    public Double sumAllBookingsCharged() {
+        double sum = 0;
+        for (Passenger p : passengers) {
+            sum += getPriceForPassenger(p);
+        }
+        return sum;
+    }
 }
