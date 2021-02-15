@@ -61,4 +61,26 @@ public class Cruise {
         }
         return sum;
     }
+
+    public Passenger findPassangerByName(String name){
+        for (Passenger p : passengers) {
+            if (p.getName().equals(name)) {
+                return p;
+            }
+        }
+        throw new IllegalArgumentException("Nincs ilyen");
+    }
+//
+//    public List<Passenger> getPassengerNamesOrdered(String name){
+//        List<Passenger> result = new ArrayList<>();
+//        List<Passenger> result1;
+//        for (Passenger p : passengers) {
+//            if (p.getName().equals(name)) {
+//                result.add(p);
+//            }
+//        }
+//        result1=passengers.sort(Comparator.comparing(Passenger::getName));
+//
+//    }
+
 }

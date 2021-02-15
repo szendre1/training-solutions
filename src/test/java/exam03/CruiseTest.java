@@ -77,8 +77,8 @@ public class CruiseTest {
 //        List<String> names = cruise.getPassengerNamesOrdered();
 //        assertEquals(List.of("Jack Doe", "Jack Smith", "John Doe"), names);
 //    }
-//
-//    @Test
+
+    @Test
     void sumAllBookingsCharged() {
         cruise.bookPassenger(new Passenger("Jack Smith", CruiseClass.LUXURY));
         cruise.bookPassenger(new Passenger("John Doe", CruiseClass.FIRST));
