@@ -7,7 +7,7 @@ import java.nio.file.Path;
 
 public class Histogram {
 
-    public void readFromBuffer(BufferedReader bufferedReader) throws IOException{
+    public String createHistogram(BufferedReader bufferedReader) throws IOException{
         String result = "";
         String line = null;
         while ((line = bufferedReader.readLine()) != null) {
@@ -18,6 +18,7 @@ public class Histogram {
             result += "\n";
         }
         System.out.println(result);
+        return result;
 
 
     }
@@ -27,7 +28,7 @@ public class Histogram {
         Histogram histogram = new Histogram();
 
         try (BufferedReader histogramBuffer = Files.newBufferedReader(Path.of("histogram.txt"))) {
-            histogram.readFromBuffer(histogramBuffer);
+            histogram.createHistogram(histogramBuffer);
         } catch (IOException e) {
             throw new IllegalStateException("Illegal file path", e);
         }
